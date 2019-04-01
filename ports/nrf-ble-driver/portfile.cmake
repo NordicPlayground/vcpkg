@@ -11,7 +11,7 @@ vcpkg_from_github(
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
     PREFER_NINJA
-    OPTIONS -DDISABLE_EXAMPLES= -DDISABLE_TESTS=
+    OPTIONS -DDISABLE_EXAMPLES= -DDISABLE_TESTS= -DNRF_BLE_DRIVER_VERSION=4.1.0
 )
 
 vcpkg_install_cmake()
