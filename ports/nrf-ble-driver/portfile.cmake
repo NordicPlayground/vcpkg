@@ -8,6 +8,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+set(VCPKG_OSX_DEPLOYMENT_TARGET "10.9")
+
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
     PREFER_NINJA
